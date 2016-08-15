@@ -11,8 +11,9 @@ A library of Flume sinks for postgreSQL
 5. Add the sink definition according to **Configuration**
 
 ##Source data format:
+- - - 
     Source data format must be JSON string, for example:
-    
+          
     {
         "data": {
             "field_name1": value1,
@@ -38,7 +39,7 @@ A library of Flume sinks for postgreSQL
     table_name: Required when "model" is 'custom', you can specifed table name as you like.
     columns: The number of columns write to postgresql. 
     nameN (N = 1,2,3...): The column name.
-    typeN (N = 1,2,3...): The column type. The value can be: {text, char, numberic, integer, int, smallint, bigint, real, float, double, double precison, date, time, timestamp}
+    typeN (N = 1,2,3...): The column type. The value can be: {text, varchar, char, numberic, integer, int, smallint, bigint, real, float, double, double precison, date, time, timestamp}
    
 ## flume.conf sample
 - - - 
